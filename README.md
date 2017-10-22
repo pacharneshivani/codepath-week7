@@ -1,6 +1,6 @@
 # Week 7 Project: WordPress vs. Kali
 
-Time spent: **7** hours spent in total
+Time spent: **9** hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
@@ -11,7 +11,8 @@ Time spent: **7** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2.2 
     - Fixed in version: 4.2.3
-  - [x] GIF Walkthrough: <img src='https://i.imgur.com/VHB6dsI.gif' title='Video Walkthrough' alt='Video Walkthrough' />
+  - [x] GIF Walkthrough: <img src='https://i.imgur.com/9jwGn1R.gif' title='Video Walkthrough' alt='Video Walkthrough' />
+  - [x] [Better quality GIF](https://i.imgur.com/VHB6dsI.gif)
   - [x] Steps to recreate: In post/page editor mode, when logged in from contributor (whose post, if approved blindingly) and above, can type in "<a href="[caption code=">]</a><a title=" onmouseover=alert('test')  ">link</a>" triggering XSS in text editor mode. 
   - [x] Affected source code: 
     - [Reference](https://klikki.fi/adv/wordpress3.html)
@@ -21,7 +22,8 @@ Time spent: **7** hours spent in total
     - Vulnerability types: User enumeration
     - Tested in version: 4.2.2
     - Fixed in version: -
-  - [x] GIF Walkthrough: <img src='https://i.imgur.com/gHyTwKu.gif' title='Video Walkthrough' alt='Video Walkthrough' />
+  - [x] GIF Walkthrough: <img src='https://i.imgur.com/j5Kkfwu.gif' title='Video Walkthrough' alt='Video Walkthrough' />
+  - [x] [Better quality GIF](https://i.imgur.com/gHyTwKu.gif)
   - [x] Steps to recreate: Run "wpscan --url [INSERT_WORDPRESS_URL_NAME] --enumerate u" in kali linux.
   - [x] Affected source code:
     - [Reference](https://www.wpwhitesecurity.com/wordpress-security/wordpress-username-disclosure-vulnerability/)
@@ -31,7 +33,8 @@ Time spent: **7** hours spent in total
     - Vulnerability types: Login Vulnerability
     - Tested in version: 4.2.2
     - Fixed in version: -
-  - [x] GIF Walkthrough: <img src='https://i.imgur.com/JuRY8cF.gif' title='Video Walkthrough' alt='Video Walkthrough' />
+  - [x] GIF Walkthrough: <img src='https://i.imgur.com/anikNCL.gif' title='Video Walkthrough' alt='Video Walkthrough' />
+  - [x] [Better quality GIF](https://i.imgur.com/JuRY8cF.gif)
   - [x] Steps to recreate: Download the rockyou.txt dictionary file through `apt-get install wordlists`. Run "wpscan --url [INSERT_WORDPRESS_URL_NAME] --enumerate u" in kali linux (to enumerate users). Then, run "wpscan --url [INSERT_WORDPRESS_URL_NAME] --wordlist [PATH_TO_ROCKYOU_DICTIONARY - usually, it's /usr/share/wordlists/rockyou.txt" --username [USERNAME_YOU_FOUND_FROM_USER_ENUMERATION]" in kali linux.
   - [x] Affected source code:
     - [GitHub](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
