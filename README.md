@@ -11,7 +11,7 @@ Time spent: **7** hours spent in total
     - Vulnerability types: XSS
     - Tested in version: 4.2.2 
     - Fixed in version: 4.2.3
-  - [x] GIF Walkthrough: <img src='https://media.giphy.com/media/xT9IgjkcmeuQ2V4aI0/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+  - [x] GIF Walkthrough: <img src='https://media.giphy.com/media/xT9IgoCUqpvHDegG6A/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
   - [x] Steps to recreate: In post/page editor mode, when logged in from contributor (whose post, if approved blindingly) and above, can type in "<a href="[caption code=">]</a><a title=" onmouseover=alert('test')  ">link</a>" triggering XSS in text editor mode. 
   - [x] Affected source code: 
     - [Reference](https://klikki.fi/adv/wordpress3.html)
@@ -31,7 +31,7 @@ Time spent: **7** hours spent in total
     - Vulnerability types: Login Vulnerability
     - Tested in version: 4.2.2
     - Fixed in version: -
-  - [x] GIF Walkthrough: <img src='https://media.giphy.com/media/l378sqhx6Mo3AicqQ/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />i
+  - [x] GIF Walkthrough: <img src='https://media.giphy.com/media/l378sqhx6Mo3AicqQ/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
   - [x] Steps to recreate: Download the rockyou.txt dictionary file through `apt-get install wordlists`. Run "wpscan --url [INSERT_WORDPRESS_URL_NAME] --enumerate u" in kali linux (to enumerate users). Then, run "wpscan --url [INSERT_WORDPRESS_URL_NAME] --wordlist [PATH_TO_ROCKYOU_DICTIONARY - usually, it's /usr/share/wordlists/rockyou.txt" --username [USERNAME_YOU_FOUND_FROM_USER_ENUMERATION]" in kali linux.
   - [x] Affected source code:
     - [GitHub](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
