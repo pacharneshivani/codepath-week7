@@ -52,7 +52,7 @@ GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-N/Aw
+N/A
 
 ## License
 
